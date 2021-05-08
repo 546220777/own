@@ -8,6 +8,15 @@
  * 打开京喜工厂，收取电力，提示获取cookie成功
  * 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
  * 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
+[task_local]
+55 23 * * 6 https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js, tag=财富岛提现, img-url= https://raw.githubusercontent.com/58xinian/icon/master/jd_unbind.png, enabled=true
+=======Loon========
+[Script]
+cron "55 23 * * 6" script-path=https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js,tag=财富岛提现
+========Surge==========
+财富岛提现 = type=cron,cronexp="55 23 * * 6",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_unbind.js
+=======小火箭=====
+注销京东会员卡 = type=cron,script-path=https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js, cronexpr="10 23 * * 6", timeout=3600, enable=true
 
   hostname = wq.jd.com, m.jingxi.com
 
