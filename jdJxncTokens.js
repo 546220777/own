@@ -6,7 +6,7 @@
 // 每个账号 token 是一个 json，示例如下
 // {"farm_jstoken":"749a90f871adsfads8ffda7bf3b1576760","timestamp":"1610165423873","phoneid":"42c7e3dadfadsfdsaac-18f0e4f4a0cf"}
 let JxncTokens = [
-  '{"farm_jstoken":"286dcb4454eda1a25bfec6ff8ce319eb","phoneid":"03c47dbc4537a54b5ca8efdd08aa4cb45d3edb81","timestamp":"1620584326677","pin":"546220777"}',//账号一的京喜农场token
+  '',//账号一的京喜农场token
   '',//账号二的京喜农场token
 ]
 // 判断github action里面是否有京喜农场 token 
