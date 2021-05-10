@@ -8,8 +8,21 @@
  * 打开京喜工厂，收取电力，提示获取cookie成功
  * 打开京喜财富岛，手动成功提现一次，提示获取cookie成功
  * 手动任意完成，提示获取cookie成功即可，然后退出跑任务脚本
+[task_local]
+#财富岛提现
+0 0 * * * https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js, tag=京东财富岛提现, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdjs.png, enabled=true
 
-  hostname = wq.jd.com, m.jingxi.com
+============Loon================
+[Script]
+cron "0 0 * * *" script-path=https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js,tag=京东财富岛提现
+
+===========Surge============
+财富岛提现 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js
+
+==============小火箭=============
+财富岛提现 = type=cron,script-path=https://raw.githubusercontent.com/546220777/own/main/jx_cfdtx.js, cronexpr="0 0 * * *", timeout=3600, enable=true
+ 
+ hostname = wq.jd.com, m.jingxi.com
 
   # quanx
   [rewrite_local]
