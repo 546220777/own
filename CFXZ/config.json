@@ -1,0 +1,16 @@
+{
+    "cookie": [
+        {
+            "XSRF-TOKEN": "",
+            "_session": ""
+        }
+    ],
+    "shareCode": {
+        "common": [],
+        "whcanswer": [],
+        "xbanswer": [],
+        "xbpickon": []
+    },
+    "logDir": "",
+    "dayDraw": false
+}
